@@ -15,7 +15,8 @@ def listcombiner(listone, listtwo):
     counter = 0
     combinedlist = []
     while ( counter < len(listone) ):
-        combinedlist += listone[counter] + listtwo[counter]
+        combinedlist.append(listone[counter])
+        combinedlist.append(listtwo[counter])
         counter += 1
     return combinedlist
 
